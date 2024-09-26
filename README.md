@@ -26,6 +26,26 @@ In this task, we will create a Google Cloud Storage bucket using Terraform.
    terraform apply
    ```
 
+### Task 2: Make an endpoint /update_airport_image to update an airport’s image.
+
+I just tried to create storage connection as I don't have experience with GO.
+I am explaining the steps here:
+1. **Include the Google Cloud Storage Client Library**
+```bash
+go get cloud.google.com/go/storage
+```
+This will automatically add the cloud.google.com/go/storage package to the go.mod file. For reference, I have manually added it to [go.mod](go.mod)
+
+2. **Initialize the GCS Client**
+
+3. **Provide the Bucket Name**
+ Used the bucket name that was created earlier using the Infrastructure as Code (IAC) tool (Terraform). [main.go](main.go)
+
+4. **Create an Object with Airport Name and Image**
+
+5. **Generate the Public URL for the image [main.go](main.go)**
+
+
 ### Task 3: Containerizing the Application with Docker
 A Dockerfile has been created to containerize the application in the [Task-3/Dockerfile](Task-3/Dockerfile)
 

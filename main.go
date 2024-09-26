@@ -64,6 +64,11 @@ func UpdateAirportImage(w http.ResponseWriter, r *http.Request) {
 	// Upload image to GCS and update the airport's image URL
 
 	// Respond with success/failure
+
+	bucketName := "bd-airport-images-bucket"
+	bucket := client.Bucket(bucketName)
+
+	imageURL := fmt.Sprintf("https://storage.googleapis.com/%s/%s", bucketName, objectName)
 }
 
 func main() {
