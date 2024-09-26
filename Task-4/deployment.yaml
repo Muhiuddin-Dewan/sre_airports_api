@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: GoApplication
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: GoApplication
+  template:
+    metadata:
+      labels:
+        app: GoApplication
+    spec:
+      containers:
+      - name: GoApplication
+        image: dewan11415/GoApplication:latest
+        ports:
+        - containerPort: 8080

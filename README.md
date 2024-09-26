@@ -58,3 +58,6 @@ We can run the image as a container using the command below:
 ```bash
 docker run -d GoApplication
 ```
+
+### Task 4: Prepare a deployment and service resource to deploy in Kubernetes
+Created deloyment.yaml and service.yaml file in [Task-4](task4) for deploy the application in kubernetes.
