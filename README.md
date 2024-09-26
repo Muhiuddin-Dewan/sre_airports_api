@@ -61,3 +61,9 @@ docker run -d GoApplication
 
 ### Task 4: Prepare a deployment and service resource to deploy in Kubernetes
 Created deloyment.yaml and service.yaml file in [Task-4](task4) for deploy the application in kubernetes.
+
+### Task 5: Use API gateway Create routing rules to send 20% of traffic to the /airports_v2 endpoint.
+For GCP perspective we can use Google Cloud Load Balancer and Traffic Director.
+For this we can follow the below step:
+1. **Deploy the Services on Google Kubernetes Engine (GKE)**
+2. **Setup Load Balancing with Traffic Director**
