@@ -72,8 +72,9 @@ For this we can follow the below step:
 ## Bonus Task
 ### Task 1: Set up a simple CI/CD pipeline to build and deploy the app to Kubernetes.
 We can use Jenkins, github action or any other CI/CD tool for deploy the app to kubernetes
-I have just added basic github action CI/CD pipeline in (.github/workflows/deploy.yaml) file.
-Note:
+I have just added basic github action CI/CD pipeline in [(.github/workflows/deploy.yaml)](.github/workflows/deploy.yaml) file.
+
+**Note:**
 Currently, the pipeline only contains the basic steps for deployment.
 Further configurations are needed, such as:
 For deploying in our server we need to create self hosted runner in our server.
