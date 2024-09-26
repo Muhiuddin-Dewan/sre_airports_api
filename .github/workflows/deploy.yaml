@@ -1,0 +1,28 @@
+# name: Deploy
+
+# on:
+#   push:
+#     branches:
+#       - main
+
+# jobs:
+#   build:
+#     runs-on: self-hosted
+
+#     steps:
+#     - name: Checkout code
+#       uses: actions/checkout@v2
+
+#     - name: Set up Go
+#       uses: actions/setup-go@v2
+#       with:
+#         go-version: 1.23.1
+
+#     - name: Build Docker Image
+#       run: docker build -t dewan11415/GoApplication:latest
+
+#     - name: Push Docker Image
+#       run: docker push dewan11415/GoApplication:latest
+
+#     - name: Deploy to Kubernetes
+#       run: kubectl apply -f deployment.yaml -f service.yaml

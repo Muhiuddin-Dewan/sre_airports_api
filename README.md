@@ -67,3 +67,18 @@ For GCP perspective we can use Google Cloud Load Balancer and Traffic Director.
 For this we can follow the below step:
 1. **Deploy the Services on Google Kubernetes Engine (GKE)**
 2. **Setup Load Balancing with Traffic Director**
+
+
+## Bonus Task
+### Task 1: Set up a simple CI/CD pipeline to build and deploy the app to Kubernetes.
+We can use Jenkins, github action or any other CI/CD tool for deploy the app to kubernetes
+I have just added basic github action CI/CD pipeline in (.github/workflows/deploy.yaml) file.
+Note:
+Currently, the pipeline only contains the basic steps for deployment.
+Further configurations are needed, such as:
+For deploying in our server we need to create self hosted runner in our server.
+Also we need to configure some more things in pipeline like login in dockhub, kubernetes access etc. 
+
+
+### Task 2: Add basic monitoring to track response times for each endpoint
+We can set up basic monitoring using Prometheus and Grafana. Configure Prometheus to scrape metrics from the app and use Grafana for visualization.
